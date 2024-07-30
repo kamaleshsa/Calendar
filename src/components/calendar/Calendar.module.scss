@@ -1,0 +1,19 @@
+.calendarWrapper {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+
+  .line {
+    width: 1px;
+    background-color: #000; 
+  }
+
+  & > :first-child {
+    flex: 1;
+  }
+
+  & > :nth-child(2) {
+    flex:3
+  }
+
+}

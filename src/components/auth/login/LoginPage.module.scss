@@ -1,0 +1,186 @@
+// Add styles for login page
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-100);
+  height: 100dvh;
+
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+
+    .logo {
+      display: flex;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    .loginContainer {
+      display: flex;
+      height: 80vh;
+      align-items: center;
+      width: max(200px, 400px);
+
+      .loginCard {
+        border-radius: 15px;
+        margin-top: 50px;
+        max-width: 650px;
+        width: 100%;
+        min-width: 350px;
+
+        .card {
+          padding: 0.5rem;
+
+          .header {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+
+            h1 {
+              flex-grow: 1;
+              text-align: center;
+              color: var(--text-600);
+            }
+          }
+
+          .cardBody {
+            padding: 1.5rem;
+          }
+        }
+
+        .loginBtn {
+          background-color: var(--background-600);
+          color: var(--text-50);
+        }
+      }
+    }
+
+    .illustration {
+      display: flex;
+      align-items: center;
+      width: 60%;
+
+      img {
+        height: 100vh;
+        width: max(800px, 1200px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .loginPage .pageContainer {
+    .logo {
+      justify-content: center;
+    }
+
+    .loginContainer {
+      width: 100%;
+      height: auto;
+
+      .loginCard {
+        min-width: 90vw;
+        margin-top: 0;
+
+        .card {
+          padding: 0;
+        }
+      }
+    }
+
+    .illustration {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .loginPage {
+    .pageContainer {
+      .logo {
+        justify-content: center;
+      }
+
+      .loginContainer {
+        width: 100%;
+        height: auto;
+
+        .loginCard {
+          min-width: 90vw;
+          margin-top: 0;
+
+          .card {
+            padding: 0;
+
+            .cardBody {
+              padding: 0 1rem 1rem;
+            }
+          }
+        }
+      }
+
+      .illustration {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .loginPage .pageContainer {
+    .logo {
+      justify-content: center;
+    }
+
+    .loginContainer {
+      width: 100%;
+      justify-content: center;
+
+      .loginCard {
+        min-width: 90vw;
+        margin-top: 0;
+      }
+    }
+
+    .illustration {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1025px) {
+  .loginPage .pageContainer {
+    width: 80%;
+
+    .logo {
+      justify-content: center;
+    }
+
+    .loginContainer {
+      width: 100%;
+      justify-content: center;
+
+      .loginCard {
+        min-width: 90vw;
+        margin-top: 0;
+      }
+    }
+
+    .illustration {
+      display: none;
+    }
+  }
+}

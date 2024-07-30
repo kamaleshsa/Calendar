@@ -1,0 +1,12 @@
+.layoutContainer {
+  background-color: var(--layout-background);
+  display: flex;
+}
+
+.contentContainer {
+  background-color: var(--black-white);
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+}
